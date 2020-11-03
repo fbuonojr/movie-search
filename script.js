@@ -14,14 +14,20 @@ function displayMovieInfo() {
 
         var rating = response.Rated;
 
-        var pOne = $("<p>").text("Rating: " + rating);
+        var pRating = $("<p>").text("Rating: " + rating);
 
-        movieDiv.append(pOne);
+        movieDiv.append(pRating);
 
         var released = response.Released;
 
-        var pTwo = $("<p>").text("Released: " + released);
+        var pReleased = $("<p>").text("Released: " + released);
 
-        movieDiv.append(pTwo);
+        movieDiv.append(pReleased);
+
+        var plot = response.Plot;
+
+        var pPlot = $("<p>").text("Plot: " + plot);
+
+        movieDiv.append(pPlot);
     });
 }
