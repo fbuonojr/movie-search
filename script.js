@@ -13,5 +13,9 @@ function displayMovieInfo() {
         var movieDiv = $("<div class='movie'>");
 
         var rating = response.Rated;
+
+        var pOne = $("<p>").text("Rating: " + rating);
+
+        movieDiv.append(pOne);
     });
 }
