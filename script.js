@@ -9,5 +9,9 @@ function displayMovieInfo() {
     $.ajax({
         url: queryURL,
         method: "GET"
-    })
+    }).then(function(response){
+        var movieDiv = $("<div class='movie'>");
+
+        var rating = response.Rated;
+    });
 }
