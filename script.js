@@ -39,3 +39,8 @@ function displayMovieInfo() {
         $("#movies-view").prepend(movieDiv);
     });
 }
+
+//this function renders the button for each movie
+function renderButtons() {
+    
+}
