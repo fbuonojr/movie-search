@@ -17,5 +17,11 @@ function displayMovieInfo() {
         var pOne = $("<p>").text("Rating: " + rating);
 
         movieDiv.append(pOne);
+
+        var released = response.Released;
+
+        var pTwo = $("<p>").text("Released: " + released);
+
+        movieDiv.append(pTwo);
     });
 }
