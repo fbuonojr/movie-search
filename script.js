@@ -29,5 +29,11 @@ function displayMovieInfo() {
         var pPlot = $("<p>").text("Plot: " + plot);
 
         movieDiv.append(pPlot);
+
+        var imgURL = response.Poster;
+
+        var image = $("<img>").attr("src", imgURL);
+
+        movieDiv.append(image);
     });
 }
