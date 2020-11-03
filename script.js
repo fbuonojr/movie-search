@@ -35,5 +35,7 @@ function displayMovieInfo() {
         var image = $("<img>").attr("src", imgURL);
 
         movieDiv.append(image);
+
+        $("#movies-view").prepend(movieDiv);
     });
 }
