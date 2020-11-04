@@ -56,3 +56,14 @@ function renderButtons() {
         $("#buttons-view").append(movieBtn);
     }
 }
+
+//this function is the on click for movoe buttons
+$("#add-movie").on("click", function(event){
+    event.preventDefault();
+
+    var movie = $("#movie-input").val().trim();
+
+    movies.push(movie);
+
+    renderButtons();
+})
