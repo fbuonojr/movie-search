@@ -67,3 +67,7 @@ $("#add-movie").on("click", function(event){
 
     renderButtons();
 })
+
+$(document).on("click", ".movie-btn", displayMovieInfo);
+
+renderButtons();
