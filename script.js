@@ -40,7 +40,19 @@ function displayMovieInfo() {
     });
 }
 
-//this function renders the button for each movie
+//this function displays each movies info once their respective button is clicked
 function renderButtons() {
-    
+    $("#buttons-view").empty();
+
+    for(var i = 0; i < movies.length; i++){
+        var movieBtn = $("<button>");
+
+        movieBtn.addClass("movie-btn");
+
+        movieBtn.attr("data-name", movies[i]);
+
+        movieBtn.text(movies[i]);
+
+        $("#buttons-view").append(movieBtn);
+    }
 }
