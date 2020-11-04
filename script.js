@@ -3,6 +3,7 @@ var movies = ["The Godfather", "The Dark Knight Rises", "Fight Club", "Catch Me 
 
 //this function renders the html
 function displayMovieInfo() {
+
     var movie = $(this).attr("data-name");
     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 
@@ -40,7 +41,7 @@ function displayMovieInfo() {
     });
 }
 
-//this function displays each movies info once their respective button is clicked
+//this function renders movie buttons
 function renderButtons() {
     $("#buttons-view").empty();
 
