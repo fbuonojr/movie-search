@@ -4,6 +4,8 @@ var movies = ["The Godfather", "The Dark Knight Rises", "Fight Club", "Catch Me 
 //this function renders the html
 function displayMovieInfo() {
 
+    $("#movies-view").empty();
+
     var movie = $(this).attr("data-name");
     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 
