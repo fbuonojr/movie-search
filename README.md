@@ -1,12 +1,10 @@
-# Project Name
+# Movie Search
 
-#### Technologies used: 
+#### Technologies used: HTML, CSS, JavaScript, jQuery, API (OMDB)
 
-This application does . . . . .
+This application does allows you to search for information about movies using the OMDB Api.
 
-How to use
-
-* link to deployed application:
+* link to deployed application: https://fbuonojr.github.io/movie-search/
 
 ![](./images/)
 
