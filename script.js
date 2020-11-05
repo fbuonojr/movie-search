@@ -66,7 +66,11 @@ $("#add-movie").on("click", function(event){
 
     var movie = $("#movie-input").val().trim();
 
-    movies.push(movie);
+    var alreadyIn = movies.includes(movie);
+    console.log(alreadyIn);
+    if(!alreadyIn){
+        movies.push(movie);
+    }
 
     renderButtons();
 })
